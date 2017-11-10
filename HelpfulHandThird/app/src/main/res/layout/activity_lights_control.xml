@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/myHouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:text="@string/my_house" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:id="@+id/relativeLayout">
+
+            <Switch
+                android:id="@+id/switchBathroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bathroom"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="70dp"
+                android:layout_alignParentStart="true" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kitchen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:layout_marginTop="70dp"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
